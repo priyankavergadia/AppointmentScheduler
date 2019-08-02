@@ -40,7 +40,7 @@
  exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, response) => {
    const agent = new WebhookClient({ request, response });
    console.log("Parameters", agent.parameters);
-   const appointment_type = agent.parameters.AppointmentType
+   const appointment_type = agent.parameters.AppointmentType;
    function makeAppointment (agent) {
      // Calculate appointment start and end datetimes (end = +1hr from start)
      //console.log("Parameters", agent.parameters.date);
