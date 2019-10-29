@@ -44,7 +44,7 @@
    function makeAppointment (agent) {
      // Calculate appointment start and end datetimes (end = +1hr from start)
      //console.log("Parameters", agent.parameters.date);
-     const dateTimeStart = new Date(Date.parse(agent.parameters.date.split('T')[0] + 'T' + agent.parameters.time.split('T')[1].split('-')[0] + timeZoneOffset));
+     const dateTimeStart = new Date(agent.parameters.date.split('T')[0] + 'T' + agent.parameters.time.split('T')[1].split('+')[0] + timeZoneOffset);
      const dateTimeEnd = new Date(new Date(dateTimeStart).setHours(dateTimeStart.getHours() + 1));
      const appointmentTimeString = dateTimeStart.toLocaleString(
        'en-US',
