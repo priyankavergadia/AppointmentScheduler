@@ -14,10 +14,11 @@
     "deploy": "firebase deploy --only functions"
   },
   "dependencies": {
-    "firebase-functions": "2.0.2",
-    "firebase-admin": "^5.13.1",
-    "actions-on-google": "2.2.0", 
-    "googleapis": "^27.0.0",
-    "dialogflow-fulfillment": "0.5.0"
+    "firebase-functions": "3.3.0",
+    "firebase-admin": "^8.8.0",
+    "actions-on-google": "2.12.0",
+    "googleapis": "^45.0.0",
+    "google-auth-library": "^5.5.1",
+    "dialogflow-fulfillment": "0.6.1"
   }
 }
