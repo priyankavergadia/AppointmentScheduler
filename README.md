@@ -10,6 +10,15 @@
 1. Under the menu icon **☰ > APIs & Services > Credentials > Create Credentials > Service Account Key**.
 1. Under **Create service account key**, select **New Service Account** from the dropdown and enter `AppointmentCalendar` for the name and click **Create**. In the popup, select **Create Without Role**.
     + JSON file will be downloaded to your computer that you will need in the setup sections below.
+    
+#### Allow all users to call your function
+
+You need to allow all users to call the function.
+
+1. From the Google Cloud Platform console, click on the burger icon and choose Cloud Functions.
+1. Select the **dialogflowFirebaseFulfillment** function and in the right pane click on **"Add members"**
+1. Type **allUsers** in the field and choose the role **Cloud Function > Cloud Functions Invoker**
+
 
 #### DMV Appointment Calendar Setup
 1. Open the JSON file that was downloaded in the previous section and copy the email address indicated by the `client_email` field
